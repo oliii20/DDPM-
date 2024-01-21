@@ -54,7 +54,7 @@ def q_x(x_0, t):
     alphas_t = alphas_bar_sqrt[t]
     alphas_1_m_t = one_minus_alphas_bar_sqrt[t]
     '''方括号表示索引'''
-    return (alphas_t * x_0 + alphas_1_m_t * noise)  # 在x[0]的基础上添加噪声 这里求解出的是t时刻添加的噪声x_t
+    return (alphas_t * x_0 + alphas_1_m_t * noise)  # 在x[0]的基础上添加噪声 这里求解出的是t时刻的图片x_t
 
 
 #################四.演示原始数据分布加噪100步后的效果####################
