@@ -137,7 +137,7 @@ def diffusion_loss_fn(model, x_0, alphas_bar_sqrt, one_minus_alphas_bar_sqrt, n_
 
     # 送入模型， 得到t时刻的随机噪声预测值
     output = model(x, t.squeeze(-1))
-    '''这里传入model不太懂'''
+    '''model'''
     # 与真实噪声一起计算误差，求平均值
     return (e - output).square().mean()
 
